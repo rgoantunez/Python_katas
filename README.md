@@ -1,5 +1,4 @@
 # Python_katas
-Ejercicios prácticos (katas) en Python
 
 🐍 Python Katas – Ejercicios de Práctica
 
