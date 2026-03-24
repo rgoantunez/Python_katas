@@ -1,8 +1,15 @@
 # %%
-#1. Escribe una función que reciba una cadena de texto como parámetro y devuelva un diccionario con las frecuencias de cada letra en la cadena. Los espacios no deben ser considerados.
-cadena_texto = 'Bienvenidos'
-for indice, caracter in enumerate(cadena_texto):
-    print(f'Índice: {indice}, caracter: {caracter}')
+#1. Escribe una función que reciba una cadena de texto como parámetro y devuelva un diccionario con las frecuencias de cada letra en la cadena. Los espacios no deben ser considerados. 
+def frecuencia_letras(cadena_texto):
+    frecuencias = {}
+
+    for caracter in cadena_texto:
+        if caracter != " ":
+            frecuencias[caracter] = frecuencias.get(caracter, 0) + 1
+
+    return frecuencias
+
+print(frecuencia_letras("Bienvenidos"))
 
 # %%
 #2. Dada una lista de números, obtén una nueva lista con el doble de cada valor. Usa la función map()
@@ -13,15 +20,12 @@ print(f'La nueva lista con el doble de cada valor es:{resultado_map_lambda}')
 
 # %%
 #3. Escribe una función que tome una lista de palabras y una palabra objetivo como parámetros. La función debe devolver una lista con todas las palabras de la lista original que contengan la palabra objetivo.
-def match_palabras(x,y):
-    palabras_generales = []
-    palabra_objetivo = ['mente']
-    return list(map(lambda x: palabras_generales.intersection(palabra_objetivo), palabras_generales))
+def match_palabras(lista_palabras, palabra_objetivo):
+    return [palabra for palabra in lista_palabras if palabra_objetivo in palabra]
 
 palabras_generales = ['Estoy', 'completamente', 'inmerso', 'en', 'el', 'universo', 'Python', 'recientemente']
-palabra_objetivo = ['mente']
+resultado = match_palabras(palabras_generales, 'mente')
 
-resultado = match_palabras(palabras_generales, palabra_objetivo)
 print(resultado)
 
 # %%
@@ -61,11 +65,12 @@ factorial (4)
 
 # %%
 #7. Genera una función que convierta una lista de tuplas a una lista de strings. Usa la función map()
-def tupla_a_string(mi_tupla):
-    return list(map(lambda t: str(t), mi_tupla))
+def tupla_a_string(lista_tuplas):
+    return list(map(lambda t: str(t), lista_tuplas))
 
-datos = [10, 15, 20, 25]
+datos = [(10, 15), (20, 25)]
 resultado = tupla_a_string(datos)
+
 print(resultado)
 
 
@@ -399,6 +404,26 @@ print(f'El empleado se encuentra en la posición Nro {resultado} de la plantilla
 print('Aquí "index" devuelve la posición del nombre en la lista')   
 
 # %%
+#32. Crea una función que tome un nombre completo y una lista de empleados, busque el nombre completo en la lista y devuelve el puesto del empleado si está en la lista, de lo contrario, devuelve un mensaje indicando que la persona no trabaja aquí.
+plantilla_empleados = {
+    'Yoko Ono': 'Directora',
+    'Robert Plant': 'Marketing',
+    'Freddy Mercury': 'Ventas',
+    'John Lennon': 'Desarrollo'
+}
+
+def buscar_empleado(nombre, empleados):
+    if nombre in empleados:
+        return empleados[nombre]
+    else:
+        return 'Esta persona no trabaja aquí'
+
+nombre_a_buscar = 'John Lennon'
+
+resultado = buscar_empleado(nombre_a_buscar, plantilla_empleados)
+print(f'El puesto del empleado {nombre_a_buscar} es: {resultado}')  
+
+# %%
 #33. Crea una función lambda que sume elementos correspondientes de dos listas dadas.
 def suma_elementos(lista1, lista2):
     return list(map(lambda x, y: x + y, lista1, lista2))
@@ -430,8 +455,8 @@ class Arbol:
 
 #4. Implementar el método crecer_ramas para aumentar en una unidad la longitud de todas las ramas existentes.
     def crecer_ramas(self):
-        self.ramas += 1
-        print(f'Han crecido las ramas de todo el árbol en 1 unidad')
+        self.ramas = [rama + 1 for rama in self.ramas]
+        print('Han crecido todas las ramas en 1 unidad')
 
 #5. Implementar el método quitar_rama para eliminar una rama en una posición específica.
     def quitar_rama(self, posicion):
@@ -444,8 +469,8 @@ class Arbol:
     def info_arbol(self):
         return {
                 'Longitud del tronco': self.tronco,
-                'Número de ramas': self.ramas,
-                'Longitud de las ramas': len(self.ramas)
+                'Número de ramas': len(self.ramas),
+                'Longitud de las ramas': self.ramas
                 }
 
 # %%
@@ -534,7 +559,8 @@ def reemplazar_palabras(texto, palabra_vieja, palabra_nueva):
 
 def eliminar_palabra(texto, palabra):
     palabras = texto.split()
-    return texto.remove(palabra)
+    palabras = [p for p in palabras if p != palabra]
+    return " ".join(palabras)
 
 def procesar_texto(texto, opcion, palabra_vieja = None, palabra_nueva = None):
     if opcion == 'contar':
