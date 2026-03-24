@@ -1,50 +1,43 @@
-# Python Katas
+# 🐍 Python Katas
 
-🐍 Python Katas – Ejercicios de Práctica
+A curated collection of Python katas focused on strengthening problem-solving skills and core programming concepts.
 
-Este repositorio contiene una colección de katas y ejercicios prácticos en Python enfocados en reforzar fundamentos de programación.
+## Overview
 
-Los ejercicios incluyen:
-- Uso de funciones
-- Expresiones lambda
-- Uso de map(), filter(), reduce()
-- Condicionales
-- Manejo de errores
-- Programación orientada a objetos (POO)
-- Manipulación de texto
-- Uso de datetime
-- Cálculo de áreas
-- Simulación de operaciones bancarias
-- Simulación de compras online
+This repository showcases a collection of hands-on coding exercises aimed at developing strong logical thinking and clean coding practices.  
 
-## 📂 Contenido:
+## 📌 Topics Covered
 
-### 🔸 Funciones básicas
-- Búsqueda de duplicados en una lista
-- Verificación de anagramas
-- Procesamiento de texto (contar, reemplazar y eliminar palabras)
-- Cálculo de áreas según figura
+- Functional programming (`map`, `filter`, `reduce`)
+- Recursion
+- Exception handling
+- Data structures
+- Algorithms and logic
+- Object-Oriented Programming (OOP)
 
-### 🔸 Condicionales
-- Determinar momento del día según hora
-- Cálculo de precio final con descuento
+## 📂 Structure
 
-### 🔸 Programación Orientada a Objetos (POO)
-- Clase `Arbol`
-- Clase `UsuarioBanco`
+Each exercise (kata) is implemented as an individual function or script, focusing on a specific concept or problem.
 
-## 🛠 Tecnologías utilizadas
+## 🧠 Objectives
+
+- Improve problem-solving skills
+- Practice clean and readable Python code
+- Reinforce core programming concepts
+- Prepare for technical interviews
+
+## 🛠️ Technologies
 
 - Python 3.14
 - Jupyter Notebook
 - VS Code
 
-## ▶️ Cómo ejecutar
+## How to Use
 
-Clonar el repositorio: https://github.com/rgoantunez/python-katas.git
+Clone repository: https://github.com/rgoantunez/python-katas.git
 
 ## 👨‍💻 Autor
 
 **Rodrigo Antúnez**  
-Economista & Desarrollador Python en formación.  
+Economist | Python Developer in Training  
 GitHub: https://github.com/rgoantunez
