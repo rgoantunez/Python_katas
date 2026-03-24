@@ -1,4 +1,4 @@
-# Python_katas
+# Python Katas
 
 🐍 Python Katas – Ejercicios de Práctica
 
@@ -19,33 +19,32 @@ Los ejercicios incluyen:
 
 ## 📂 Contenido:
 
-### 🔹 Funciones básicas
+### 🔸 Funciones básicas
 - Búsqueda de duplicados en una lista
 - Verificación de anagramas
 - Procesamiento de texto (contar, reemplazar y eliminar palabras)
 - Cálculo de áreas según figura
 
-### 🔹 Condicionales
+### 🔸 Condicionales
 - Determinar momento del día según hora
 - Cálculo de precio final con descuento
 
-### 🔹 Programación Orientada a Objetos (POO)
+### 🔸 Programación Orientada a Objetos (POO)
 - Clase `Arbol`
 - Clase `UsuarioBanco`
 
 ## 🛠 Tecnologías utilizadas
 
-- Python 3
+- Python 3.14
 - Jupyter Notebook
 - VS Code
 
 ## ▶️ Cómo ejecutar
 
-Clonar el repositorio:
-git clone https://github.com/rgoantunez/Python_katas.git
+Clonar el repositorio: https://github.com/rgoantunez/python-katas.git
 
 ## 👨‍💻 Autor
 
 **Rodrigo Antúnez**  
-Desarrollador Python en formación  
+Economista & Desarrollador Python en formación.  
 GitHub: https://github.com/rgoantunez
