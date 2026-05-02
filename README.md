@@ -2,7 +2,7 @@
 
 A curated collection of Python katas focused on strengthening problem-solving skills and core programming concepts.
 
-## Overview
+## 🔎 Overview
 
 This repository showcases a collection of hands-on coding exercises aimed at developing strong logical thinking and clean coding practices.  
 
@@ -15,37 +15,37 @@ This repository showcases a collection of hands-on coding exercises aimed at dev
 
 ## 📌 Topics Covered
 
-### 🔹 Core Concepts
+### 🔸 Core Concepts
 - Data structures (lists, tuples, dictionaries, sets)
 - Conditional logic (`if`, `elif`, `else`)
 - Iteration & transformations
 
-### 🔹 Functional Programming
+### 🔸 Functional Programming
 - `map`, `filter`, `reduce`
 - Lambda functions
 
-### 🔹 Problem Solving
+### 🔸 Problem Solving
 - Algorithmic thinking
 - Searching & filtering
 - Aggregations (sum, averages, products)
 
-### 🔹 Data Handling
+### 🔸 Data Handling
 - String manipulation & text processing
 - Data cleaning & type handling
 - Working with mixed data types
 
-### 🔹 Error Handling
+### 🔸 Error Handling
 - Exception handling
 - Custom exceptions
 - Input validation
 
-### 🔹 Object-Oriented Programming (OOP)
+### 🔸 Object-Oriented Programming (OOP)
 - Class design
 - Methods implementation
 - State management
 - Business logic simulations
 
-## 📂 Structure
+## 🗂 Structure
 
 Each exercise (kata) is implemented as an individual function or script, focusing on a specific concept or problem.
 
@@ -62,5 +62,5 @@ Clone repository: https://github.com/rgoantunez/python-katas.git
 ## 👨‍💻 Autor
 
 **Rodrigo Antúnez**  
-Economist | Python Developer in training  
+Economist | Python Developer in training.
 GitHub: https://github.com/rgoantunez
