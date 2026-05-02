@@ -55,12 +55,10 @@ Each exercise (kata) is implemented as an individual function or script, focusin
 - Jupyter Notebook
 - VS Code
 
-## How to Use
-
-Clone repository: https://github.com/rgoantunez/python-katas.git
-
 ## 👨‍💻 Autor
 
 **Rodrigo Antúnez**  
 Economist | Python Developer in training.
+
 GitHub: https://github.com/rgoantunez
+Clone Repository: https://github.com/rgoantunez/python-katas.git
